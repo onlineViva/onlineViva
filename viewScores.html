@@ -27,8 +27,8 @@
         <div class="list-group" style="padding-left:5%;padding-right:5%">
           <a href="subjectProfile.html" class="list-group-item">Profile</a>
           <a href="addTest.html" class="list-group-item">Add a test</a>
-          <a href="viewTest.html" class="list-group-item active">View all test</a>
-          <a href="viewScores.html" class="list-group-item">View all scores</a>
+          <a href="viewTest.html" class="list-group-item">View all test</a>
+          <a href="viewScores.html" class="list-group-item active">View all scores</a>
           <a href="logout.html" class="list-group-item">Logout</a>
         </div>
       </div>
@@ -40,23 +40,40 @@
           <div class="panel panel-default">
 
             <div class="panel-heading">
-              <h3 class="panel-title">View Tests</h3>
+              <h3 class="panel-title">View Scores</h3>
             </div>
 
             <div class="panel-body" style="padding-right:7%;padding-left:7%">
 
 
-              <div class="list-group">
+              <label>Enter USN</label>
+              <div class="input-group">
+                <input class="form-control" type="text" placeholder="Enter USN to search specific user score">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Search</button>
+                </span>
+              </div>
 
+              <hr/>
+
+              <div class="list-group" style="margin-top:5%">
+
+                <label>Class score</label>
                 <!--
                 This below element is replicated by the ejs machine for n different elements
                 each representing the test obtained from the database.
                 -->
                 <a href="#test1" class="list-group-item">
                   <h4>Test 1 / Week 1</h4>
-                  <span><b>Number of questions:</b><i>20</i></span>
-                  <span style="margin-left:2%;"><b>Time limit:</b><i>10 min</i></span>
+                  <span><b>Average Score:</b><i>3.4/5</i></span>
                   <span style="margin-left:2%;"><b>Theme:</b><i>Unit 1</i></span>
+                  <span style="margin-left:2%;"><b>Toughest:</b><i>Q3,Q10,Q11</i></span>
+                </a>
+                <a href="#test1" class="list-group-item">
+                  <h4>Test 2 / Week 2</h4>
+                  <span><b>Average Score:</b><i>4.8/5</i></span>
+                  <span style="margin-left:2%;"><b>Theme:</b><i>Unit 2</i></span>
+                  <span style="margin-left:2%;"><b>Toughest:</b><i>Q5</i></span>
                 </a>
                 <!-- Clicking on each of the test should show display an alert asking
                 if they are ready to take the test with the timer beginning -->
