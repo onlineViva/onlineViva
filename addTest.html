@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Viva</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">OnlineViva</a>
+      </div>
+      <p class="nav navbar-nav navbar-text navbar-right" style="margin-right:1%">Signed in as <i>10CS14</i></p>
+    </div>
+  </nav>
+  <!-- end of navigation bar -->
+
+  <div class="container" style="margin-top:5%">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group" style="padding-left:5%;padding-right:5%">
+          <a href="subjectProfile.html" class="list-group-item">Profile</a>
+          <a href="addTest.html" class="list-group-item active">Add a test</a>
+          <a href="viewTest.html" class="list-group-item">View all test</a>
+          <a href="#" class="list-group-item">View all scores</a>
+          <a href="#" class="list-group-item">Logout</a>
+        </div>
+      </div>
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-8">
+
+        <div style="padding-right:5%;padding-left:5%">
+          <div class="panel panel-default">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">Add new test</h3>
+            </div>
+
+            <div class="panel-body" style="padding-right:7%;padding-left:7%">
+
+              <!-- This shows the error
+              Test name already exists
+              One of the question fields or option fields is empty -->
+              <div class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                Error shown here
+              </div>
+
+              <!-- Test name -->
+              <div class="input-group" style="margin-top:2%">
+                <span class="input-group-addon">Test Name</span>
+                <input type="text" class="form-control" placeholder="Enter testname">
+              </div>
+
+              <!-- Number of questions ,typing this generates those many questions-->
+              <div class="input-group" style="margin-top:2%">
+                <span class="input-group-addon">Number of questions</span>
+                <input type="text" class="form-control" placeholder="Enter number of questions">
+              </div>
+
+              <!-- Time limit -->
+              <div class="input-group" style="margin-top:2%">
+                <span class="input-group-addon">Time limit (in minutes)</span>
+                <input type="text" class="form-control" placeholder="Enter time limit in minutes">
+              </div>
+
+              <!-- Theme of test -->
+              <div class="input-group" style="margin-top:2%">
+                <span class="input-group-addon">Theme</span>
+                <input type="text" class="form-control" placeholder="Enter theme for test">
+              </div>
+
+              <div class="list-group" style="margin-top:2%">
+
+                <!--
+                This below element is replicated by the ejs machine for n different elements
+                each representing the test obtained from the database.
+                -->
+                <div class="list-group-item">
+                  <div>
+
+                    <h4>Enter question 1</h4>
+
+                    <div class="input-group">
+                      <input class="form-control" placeholder="Enter question number 1" type="text">
+                      <span class="input-group-btn">
+                        <button class="btn btn-warning" type="button">X Delete</button>
+                      </span>
+                    </div>
+
+                    <div style="margin-top:2%">
+                      <div class="input-group">
+                        <span class="input-group-addon" title="Select the right answer">
+                          <input type="checkbox" aria-label="...">
+                        </span>
+                        <span class="input-group-addon">Option 1</span>
+                        <input type="text" class="form-control" placeholder="Enter option 1">
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-addon" title="Select the right answer">
+                          <input type="checkbox" aria-label="...">
+                        </span>
+                        <span class="input-group-addon">Option 2</span>
+                        <input type="text" class="form-control" placeholder="Enter option 2">
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-addon" title="Select the right answer">
+                          <input type="checkbox" aria-label="...">
+                        </span>
+                        <span class="input-group-addon">Option 3</span>
+                        <input type="text" class="form-control" placeholder="Enter option 3">
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-addon" title="Select the right answer">
+                          <input type="checkbox" aria-label="...">
+                        </span>
+                        <span class="input-group-addon">Option 4</span>
+                        <input type="text" class="form-control" placeholder="Enter option 4">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
