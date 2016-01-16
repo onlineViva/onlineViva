@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Viva</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">OnlineViva</a>
+      </div>
+      <p class="nav navbar-nav navbar-text navbar-right" style="margin-right:1%">Signed in as <i>10CS14</i></p>
+    </div>
+  </nav>
+  <!-- end of navigation bar -->
+
+  <div class="container" style="margin-top:5%">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group" style="padding-left:5%;padding-right:5%">
+          <a href="#" class="list-group-item active">Profile</a>
+          <a href="#" class="list-group-item">Add a test</a>
+          <a href="#" class="list-group-item">View all test</a>
+          <a href="#" class="list-group-item">View all scores</a>
+          <a href="#" class="list-group-item">Logout</a>
+        </div>
+      </div>
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-8">
+
+        <div style="padding-right:5%;padding-left:5%">
+          <div class="panel panel-default">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">Profile</h3>
+            </div>
+
+            <div class="panel-body" style="padding-right:7%;padding-left:7%">
+              <!-- This part of the data changes based on page -->
+
+              <!-- This shows the error
+              Enter a valid name
+              ID cannot be changed
+              Old passwords wrong
+              New passwords dont match -->
+              <div class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                Error text replaces this text
+              </div>
+
+              <!-- ID -->
+              <div style="margin-top:1%">
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon2">ID</span>
+                  <input type="text" class="form-control" aria-describedby="basic-addon2" value="10CS14">
+                </div>
+              </div>
+
+              <!-- Name -->
+              <div style="margin-top:1%">
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">Name</span>
+                  <input type="text" class="form-control" aria-describedby="basic-addon1" value="Subject Name here">
+                </div>
+              </div>
+
+              <!-- Change password -->
+              <div class="panel panel-default" style="margin-top:2%">
+
+                <div class="panel-heading">
+                  Change password ( * Required fields if you want to change password )
+                </div>
+
+                <div class="panel-body">
+                  <!-- Old Password -->
+                  <div>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon2">Old Password*</span>
+                      <input type="password" class="form-control" aria-describedby="basic-addon2">
+                    </div>
+                  </div>
+
+                  <!-- New Password -->
+                  <div style="margin-top:1%">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon2">New Password*</span>
+                      <input type="password" class="form-control" aria-describedby="basic-addon2">
+                    </div>
+                  </div>
+
+                  <!-- Retype New Password -->
+                  <div style="margin-top:1%">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon2">Retype new password*</span>
+                      <input type="password" class="form-control" aria-describedby="basic-addon2">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-default" style="text-align:right;">Submit</a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
+
+<!-- Need to add some more profile data such as this
+
+<div class="form-group">
+  <label for="select" class="control-label">Semesters</label>
+  <div>
+    <select multiple="" class="form-control">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+</div> -->
