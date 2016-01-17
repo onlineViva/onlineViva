@@ -7,6 +7,7 @@
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <script src="js/bootstrap.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -49,29 +50,39 @@
       <div class="panel panel-default">
         <div class="panel-header">
           <center>
-            <h3>Login</h3>
+            <h3>Sign up</h3>
           </center>
         </div>
         <div class="panel-body" style="padding-left:10%;padding-right:10%;margin-left:5%;margin-right:5%">
+
           <!-- enter user id -->
           <div class="form-group">
-            <label for="userId" class="control-label">User Id</label>
-            <input type="text" class="form-control" placeholder="Enter Id">
+            <label for="userId" class="control-label">Email/LoginId</label>
+            <input type="text" class="form-control" placeholder="Enter Id *used for login">
           </div>
           <!-- enter password -->
           <div class="form-group">
-            <label for="userPassword" class="control-label">User Password</label>
-            <input type="password" class="form-control" placeholder="Enter Password">
+            <label for="userPassword1" class="control-label">Password(login)</label>
+            <input type="password" class="form-control" placeholder="Enter Password *used for login">
           </div>
+          <!-- retype enter password -->
+          <div class="form-group">
+            <label for="userPassword2" class="control-label">Retype Password(login)</label>
+            <input type="password" class="form-control" placeholder="Enter Password again *used for login">
+          </div>
+          <!-- Captcha added here -->
+          <div class="g-recaptcha" data-sitekey="6LeSkRUTAAAAACmIvfC-R3L-WRlJQl-0FuDtN0Ln"></div>
+
+          <p>A verification mail will be sent to your email id provided above. Extra credentials like name and other data is filled after logging in.</p>
+
           <!-- The button and set of links -->
           <div>
             <center>
               <div>
-                <a href="subject/subjectProfile.html" class="btn btn-default" style="margin-top:2%;margin-bottom:2%">Sign In</a>
+                <a href="subject/subjectProfile.html" class="btn btn-default" style="margin-top:2%;margin-bottom:2%">Sign Up</a>
               <div>
-              <a href="#">forgot password?</a>
-              <div style="margin-top:5%">
-                <a href="signUp.html">Sign up to create a new account</a></br>
+              <a href="index.html">Go back to login</a>
+              <div style="margin-top:4%">
               </div>
             </center>
           </div>
