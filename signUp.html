@@ -70,6 +70,27 @@
             <label for="userPassword2" class="control-label">Retype Password(login)</label>
             <input type="password" class="form-control" placeholder="Enter Password again *used for login">
           </div>
+          <!-- Check if student on teacher -->
+          <div class="form-group">
+            <label class="control-label">User type:</label>
+            <div>
+                <label>
+                  <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+                  Student
+                </label>
+                <label>
+                  <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                  Teacher(sign in as subject)
+                </label>
+            </div>
+          </div>
+
+
+          <!-- This field is intentionally not shown to the user and is used to track bots-->
+          <!-- This field will only be filled by the bots and not by users as it is inaccessible -->
+          <div class="form-group" style="height:0px;width:0px;">
+            <input type="password" class="form-control" style="height:0px;width:0px;display:none;" placeholder="Enter Password again *used for login">
+          </div>
           <!-- Captcha added here -->
           <div class="g-recaptcha" data-sitekey="6LeSkRUTAAAAACmIvfC-R3L-WRlJQl-0FuDtN0Ln"></div>
 
