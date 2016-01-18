@@ -27,7 +27,7 @@
         <div class="list-group" style="padding-left:5%;padding-right:5%">
           <a href="studentProfile.html" class="list-group-item">Profile</a>
 
-          <a href="viewTest.html" class="list-group-item">View all test</a>
+          <a href="viewTest.html" class="list-group-item">Take a test</a>
           <a href="viewScores.html" class="list-group-item active">View all scores</a>
           <a href="../logout.html" class="list-group-item">Logout</a>
         </div>
@@ -46,9 +46,42 @@
             <div class="panel-body" style="padding-right:7%;padding-left:7%">
 
 
+              <div class="container">
+                <div class="row">
+                  <!--  Semester -->
+                  <div class="col-xs-2">
+                    <div style="margin-top:1%">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Sem</span>
+                        <select class="form-control">
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
 
+                  <!--  Subject -->
+                  <div class="col-xs-4">
+                    <div style="margin-top:1%">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Subject</span>
+                        <select class="form-control">
+                          <option>System Software</option>
+                          <option>Software Engineering</option>
+                          <option>Database Management Systems</option>
+                          <option>Operating Systems</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
 
-            
+                </div>
+              </div>
 
               <div class="list-group" style="margin-top:5%">
 
@@ -59,15 +92,13 @@
                 -->
                 <a href="#test1" class="list-group-item">
                   <h4>Test 1 / Week 1</h4>
-                  <span><b>Average Score:</b><i>3.4/5</i></span>
+                  <span><b>Score:</b><i>3.4/5</i></span>
                   <span style="margin-left:2%;"><b>Theme:</b><i>Unit 1</i></span>
-                  <span style="margin-left:2%;"><b>Toughest:</b><i>Q3,Q10,Q11</i></span>
                 </a>
                 <a href="#test1" class="list-group-item">
                   <h4>Test 2 / Week 2</h4>
-                  <span><b>Average Score:</b><i>4.8/5</i></span>
+                  <span><b>Score:</b><i>4.8/5</i></span>
                   <span style="margin-left:2%;"><b>Theme:</b><i>Unit 2</i></span>
-                  <span style="margin-left:2%;"><b>Toughest:</b><i>Q5</i></span>
                 </a>
                 <!-- Clicking on each of the test should show display an alert asking
                 if they are ready to take the test with the timer beginning -->

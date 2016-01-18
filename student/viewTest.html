@@ -28,7 +28,7 @@
         <div class="list-group" style="padding-left:5%;padding-right:5%">
           <a href="studentProfile.html" class="list-group-item">Profile</a>
 
-          <a href="viewTest.html" class="list-group-item active">View all test</a>
+          <a href="viewTest.html" class="list-group-item active">Take a test</a>
           <a href="viewScores.html" class="list-group-item">View all scores</a>
           <a href="../logout.html" class="list-group-item">Logout</a>
         </div>
@@ -48,63 +48,57 @@
 
               <div class="container">
                 <div class="row">
-
-              <!-- This below element is a dropdown(slipt button) for selecting a semester. -->
-
-                      <div class="btn-group">
-                            <button type="button" class="btn btn-default">SEM</button>
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">5th</a></li>
-                            <li><a href="#">6th</a></li>
-                            <li><a href="#">7th</a></li>
-                          </ul>
-                     </div>
-
-                     <div class="btn-group" style="margin-left:6%">
-                           <button type="button" class="btn btn-default">SUBJECT</button>
-                           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <span class="caret"></span>
-                           <span class="sr-only">Toggle Dropdown</span>
-                         </button>
-                         <ul class="dropdown-menu">
-                           <li><a href="#">DBMS</a></li>
-                           <li><a href="#">SS</a></li>
-                           <li><a href="#">CN</a></li>
-                         </ul>
+                  <!--  Semester -->
+                  <div class="col-xs-2">
+                    <div style="margin-top:1%">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Sem</span>
+                        <select class="form-control">
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                        </select>
+                      </div>
                     </div>
+                  </div>
 
+                  <!--  Subject -->
+                  <div class="col-xs-4">
+                    <div style="margin-top:1%">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Subject</span>
+                        <select class="form-control">
+                          <option>System Software</option>
+                          <option>Software Engineering</option>
+                          <option>Database Management Systems</option>
+                          <option>Operating Systems</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
               </div>
 
-              <div class="panel panel-default" style="margin-top:4%">
-                <div class="panel-heading">
-                  <h4 class="panel-title" style="text-align:right"><a href="#" class="icon"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a></h4>
-                </div>
+              <div class="list-group" style="margin-top:5%">
 
-                <div class="panel-body">
+                  <label>System Software / 3rd semester</label>
 
-                    <div class="list-group" style="margin-top:5%">
-
-                        <!--
-                        This below element is replicated by the ejs machine for n different elements
-                        each representing the test obtained from the database.
-                        -->
-                        <a href="#test1" class="list-group-item">
-                          <h4>Test 1 / Week 1</h4>
-                          <span><b>Number of questions:</b><i>20</i></span>
-                          <span style="margin-left:2%;"><b>Time limit:</b><i>10 min</i></span>
-                          <span style="margin-left:2%;"><b>Theme:</b><i>Unit 1</i></span>
-                        </a>
-                        <!-- Clicking on each of the test should show display an alert asking
-                        if they are ready to take the test with the timer beginning -->
-
-                      </div>
-                </div>
+                  <!--
+                  This below element is replicated by the ejs machine for n different elements
+                  each representing the test obtained from the database.
+                  -->
+                  <a href="#test1" class="list-group-item">
+                    <h4>Test 1 / Week 1</h4>
+                    <span><b>Number of questions:</b><i>20</i></span>
+                    <span style="margin-left:2%;"><b>Time limit:</b><i>10 min</i></span>
+                    <span style="margin-left:2%;"><b>Theme:</b><i>Unit 1</i></span>
+                  </a>
+                  <!-- Clicking on each of the test should show display an alert asking
+                  if they are ready to take the test with the timer beginning -->
 
               </div>
 
