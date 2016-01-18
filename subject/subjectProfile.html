@@ -77,49 +77,44 @@
               <!--  College name -->
               <div style="margin-top:1%">
                 <div class="input-group">
-                  <span class="input-group-addon" id="basic-addon1">COLLEGE</span>
-                  <input type="text" class="form-control" aria-describedby="basic-addon1" value="College Name here">
+                  <span class="input-group-addon" id="basic-addon1">College</span>
+                  <select class="form-control">
+                    <option title="This is generalised course that is accessible to anyone.">General</option>
+                    <option title="Locked and extra access.">Dayanand Sagar College of Engineering</option>
+                  </select>
                 </div>
               </div>
 
-              <!-- Dept name -->
+
+              <!--  Stream -->
               <div style="margin-top:1%">
                 <div class="input-group">
-                    <div class="input-group-btn">
-                          <button type="button" class="btn btn-default">DEPT</button>
-                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="caret"></span>
-                          <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">5th</a></li>
-                          <li><a href="#">6th</a></li>
-                          <li><a href="#">7th</a></li>
-                        </ul>
-                    </div>
-                    <input type="text" class="form-control">
+                  <span class="input-group-addon" id="basic-addon1">Stream</span>
+                  <select class="form-control">
+                    <option>Computer Science</option>
+                    <option>Information Science</option>
+                    <option>Electronics and Communications</option>
+                    <option>Electrical and Electronics</option>
+                    <option>Civil</option>
+                  </select>
                 </div>
-
               </div>
 
-
-              <!-- SEMESTER -->
+              <!-- This acts as the global semester setting, changing this would modify
+              default semester in all places -->
+              <!--  Semester -->
               <div style="margin-top:1%">
-                  <div class="input-group">
-                      <div class="input-group-btn">
-                            <button type="button" class="btn btn-default">SEM</button>
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">5th</a></li>
-                            <li><a href="#">6th</a></li>
-                            <li><a href="#">7th</a></li>
-                          </ul>
-                     </div>
-                     <input type="text" class="form-control" style="width:20%">
-                  </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">Semester</span>
+                  <select class="form-control">
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                  </select>
+                </div>
               </div>
 
               <!-- Change password -->
