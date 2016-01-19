@@ -87,42 +87,38 @@
                 <div class="list-group-item">
                   <div>
 
-                    <h4>Enter question 1</h4>
-
-                    <div class="input-group">
+                    <div class="form-group">
+                      <label>Enter question number <i>K</i></label>
                       <input class="form-control" placeholder="Enter question number 1" type="text">
-                      <span class="input-group-btn">
-                        <button class="btn btn-warning" type="button" title="Click to delete this question">X Delete</button>
-                      </span>
                     </div>
 
                     <div style="margin-top:2%">
                       <div class="input-group">
                         <span class="input-group-addon" title="Select the right answer">
-                          <input type="checkbox" aria-label="...">
+                          <input type="radio" name="q1" aria-label="...">
                         </span>
-                        <span class="input-group-addon">Option 1</span>
+                        <span class="input-group-addon">1.</span>
                         <input type="text" class="form-control" placeholder="Enter option 1">
                       </div>
                       <div class="input-group">
                         <span class="input-group-addon" title="Select the right answer">
-                          <input type="checkbox" aria-label="...">
+                          <input type="radio" name="q1" aria-label="...">
                         </span>
-                        <span class="input-group-addon">Option 2</span>
+                        <span class="input-group-addon">2.</span>
                         <input type="text" class="form-control" placeholder="Enter option 2">
                       </div>
                       <div class="input-group">
                         <span class="input-group-addon" title="Select the right answer">
-                          <input type="checkbox" aria-label="...">
+                          <input type="radio" name="q1" aria-label="...">
                         </span>
-                        <span class="input-group-addon">Option 3</span>
+                        <span class="input-group-addon">3.</span>
                         <input type="text" class="form-control" placeholder="Enter option 3">
                       </div>
                       <div class="input-group">
                         <span class="input-group-addon" title="Select the right answer">
-                          <input type="checkbox" aria-label="...">
+                          <input type="radio" name="q1" aria-label="...">
                         </span>
-                        <span class="input-group-addon">Option 4</span>
+                        <span class="input-group-addon">4.</span>
                         <input type="text" class="form-control" placeholder="Enter option 4">
                       </div>
                     </div>
@@ -132,11 +128,10 @@
 
                 <div class="container" style="margin-top:5%">
                   <div class="row">
-                <button type="button" class="btn btn-primary" style="margin-left:15%">ADD</button>
-                <button type="button" class="btn btn-success" onclick="myfunction()" style="margin-left:5%">SAVE</button>
+                    <a class="btn btn-primary" style="margin-left:15%">ADD</a>
+                    <a class="btn btn-success" href="finalQuestion.html" style="margin-left:5%">SAVE</a>
+                  </div>
                 </div>
-              </div>
-
 
               </div>
 
@@ -148,17 +143,6 @@
       </div>
     </div>
   </div>
-
-
-  <script type="text/javascript">
-
-  // function to go to finalQuestion.html page on clicking save button.
-
-    function myfunction() {
-      window.location.href="finalQuestion.html";
-    }
-
-  </script>
 
 </body>
 </html>

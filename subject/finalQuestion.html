@@ -48,30 +48,69 @@
             </div>
 
             <div class="panel-body">
-              <div class="well">
-                <span style="margin-left:2%"><i><b>Test Name:_______</i></b></span>
-                <span style="margin-left:45%"><i><b>No of questions:_______</i></b></span>
-                <span style="margin-left:2%;"><i><b>Time Limit:_______</i></b></span>
-                <span style="margin-left:45%"><i><b>Theme:_______</i></b></span>
+              <div class="panel-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="well">
+                      <label>Test data</label>
+                      <!-- Test name -->
+                      <div class="input-group">
+                        <span class="input-group-addon">Test Name</span>
+                        <input type="text" disabled class="form-control" value="Test 1/ week 1">
+                      </div>
+                      <!-- Number of questions ,typing this generates those many questions-->
+                      <div class="input-group">
+                        <span class="input-group-addon">Number of questions</span>
+                        <input type="text" disabled class="form-control" value="20">
+                      </div>
+                      <!-- Time limit -->
+                      <div class="input-group">
+                        <span class="input-group-addon">Time limit (in minutes)</span>
+                        <input type="text" disabled class="form-control" value="10">
+                      </div>
+                      <!-- Theme of test -->
+                      <div class="input-group">
+                        <span class="input-group-addon">Theme</span>
+                        <input type="text" disabled class="form-control" value="unit 1">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <label>Questions</label>
+                    <!-- Show to questions here -->
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <div>
+                          <p class="lead">Here lies question 1</p>
+                          <ol>
+                            <p class="text-success" title="green coloured represent right answer">1. S</p>
+                            <p class="text-danger" title="red coloured represent right answer">2. A</p>
+                            <p class="text-danger" title="red coloured represent right answer">3. W</p>
+                            <p class="text-danger" title="red coloured represent right answer">4. D</p>
+                          </ol>
+                        </div>
+                        <a href="#" class="btn btn-danger" title="click to delete this question">Delete</a>
+                      </li>
+                      <li class="list-group-item">
+                        <div>
+                          <p class="lead">Here lies question 1</p>
+                          <ol>
+                            <p class="text-success" title="green coloured represent right answer">1. S</p>
+                            <p class="text-danger" title="red coloured represent right answer">2. A</p>
+                            <p class="text-danger" title="red coloured represent right answer">3. W</p>
+                            <p class="text-danger" title="red coloured represent right answer">4. D</p>
+                          </ol>
+                        </div>
+                        <a href="#" class="btn btn-danger" title="click to delete this question">Delete</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-default" title="releases it to the public and cannot be further modified">Submit</a>
+                <a href="addTest.html" class="btn btn-default">Click to modify</a>
+                <a href="#" class="btn btn-default" title="Saves the data privately and can be modified later">Save only!</a>
+                  <!-- <button class="btn btn-success" type="button" style="margin-left:45%">SUBMIT</button> -->
               </div>
-              <div class="panel panel-default" style="padding:2%">
-                <div class="panel-body">
-                  <a href="#question1" class="list-group-item">
-                    <h4>QUESTION 1</h4>
-                    <button class="btn btn-warning" type="button" style="margin-left:90%">view</button>
-                  </a>
-                  <a href="#question1" class="list-group-item">
-                    <h4>QUESTION 2</h4>
-                    <button class="btn btn-warning" type="button" style="margin-left:90%">view</button>
-                  </a>
-                  <a href="#question1" class="list-group-item">
-                    <h4>QUESTION 3</h4>
-                    <button class="btn btn-warning" type="button" style="margin-left:90%">view</button>
-                  </a>
-                </div>
-              </div>
-                <button class="btn btn-success" type="button" style="margin-left:45%">SUBMIT</button>
-
             </div>
 
           </div>
