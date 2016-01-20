@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Viva</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+  <script src="../js/bootstrap.min.js"></script>
+  <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+  <!-- Navigation bar starts here -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">OnlineViva</a>
+      </div
+      <div>
+          <p class="nav navbar-nav navbar-text navbar-right" style="margin-right:1%" >Signed in as <i>10CS14</i></p>
+          <p id="txt" class="nav navbar-nav navbar-text navbar-right" style="margin-rightt:10%;color:#0000ff" ></p>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-center">Viva Subject</h1>
+      <p class="text-center">{Information abt the test such as syllabus coverage}</p>
+    </div>
+  </div>
+
+  <div class="panel panel-primary" style="padding-right:7%;padding-left:7%">
+        <div class="panel-heading" style="font-size:200%;" >Who is the father of computer science</div>
+        <div class="panel-body">
+          <div class="well">
+          <p>The <mark><i>Answer</i></mark> is -</p>
+          <form role="form"  style="font-size:125%;">
+              <div class="radio">
+                <label><input type="radio" name="optradio">Nowman</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio">Anto</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio" >Nawaz</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio" >Charles Babbage</label>
+              </div>
+            </form>
+          </div>
+        </div>
+  </div>
+
+
+</body>
+</html>
