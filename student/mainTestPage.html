@@ -4,72 +4,150 @@
   <title>Online Viva</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+  <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.min.js"></script>
-  <script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-</script>
 </head>
 
-<body onload="startTime()">
+<body>
 
-  <!-- Navigation bar starts here -->
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default">
     <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <a class="navbar-brand" href="#">OnlineViva</a>
-      </div
-      <div>
-          <p class="nav navbar-nav navbar-text navbar-right" style="margin-right:1%" >Signed in as <i>10CS14</i></p>
-          <p id="txt" class="nav navbar-nav navbar-text navbar-right" style="margin-rightt:10%;color:#0000ff" ></p>
+      </div>
+      <p class="nav navbar-nav navbar-text navbar-right" style="margin-right:1%">Signed in as <i>1DS13CS</i></p>
+    </div>
+  </nav>
+  <!-- end of navigation bar -->
+
+  <div style="position:fixed;top:15%;right:3%;border:1px solid black;padding:1%">
+    <span style="font-size:170%;">05:00</span>
+  </div>
+
+  <div class="container" style="margin-top:1%">
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-10">
+
+        <h3>Test 2</h3>
+
+        <div style="padding-right:5%;padding-left:7%;">
+          <ul class="pagination" title="click on one to go to specific question">
+            <li class="active"><a href="#">01</a></li>
+            <li><a href="#">02</a></li>
+            <li><a href="#">03</a></li>
+            <li><a href="#">04</a></li>
+            <li><a href="#">05</a></li>
+            <li><a href="#">06</a></li>
+            <li><a href="#">07</a></li>
+            <li><a href="#">08</a></li>
+            <li><a href="#">09</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">11</a></li>
+            <li><a href="#">12</a></li>
+            <li><a href="#">13</a></li>
+            <li><a href="#">14</a></li>
+            <li><a href="#">15</a></li>
+            <li><a href="#">16</a></li>
+            <li><a href="#">17</a></li>
+            <li><a href="#">18</a></li>
+            <li><a href="#">19</a></li>
+            <li><a href="#">20</a></li>
+            <li><a href="#">21</a></li>
+            <li><a href="#">22</a></li>
+            <li><a href="#">23</a></li>
+            <li><a href="#">24</a></li>
+            <li><a href="#">25</a></li>
+            <li><a href="#">26</a></li>
+            <li><a href="#">27</a></li>
+            <li><a href="#">28</a></li>
+            <li><a href="#">29</a></li>
+            <li><a href="#">20</a></li>
+            <li><a href="#">31</a></li>
+            <li><a href="#">32</a></li>
+            <li><a href="#">33</a></li>
+            <li><a href="#">34</a></li>
+            <li><a href="#">35</a></li>
+            <li><a href="#">36</a></li>
+            <li><a href="#">37</a></li>
+            <li><a href="#">38</a></li>
+            <li><a href="#">39</a></li>
+            <li><a href="#">40</a></li>
+            <li><a href="#">41</a></li>
+            <li><a href="#">42</a></li>
+            <li><a href="#">43</a></li>
+            <li><a href="#">44</a></li>
+            <li><a href="#">45</a></li>
+            <li><a href="#">46</a></li>
+            <li><a href="#">47</a></li>
+            <li><a href="#">48</a></li>
+            <li><a href="#">49</a></li>
+            <li><a href="#">50</a></li>
+            <li><a href="#">51</a></li>
+            <li><a href="#">52</a></li>
+            <li><a href="#">53</a></li>
+            <li><a href="#">54</a></li>
+            <li><a href="#">55</a></li>
+            <li><a href="#">56</a></li>
+            <li><a href="#">57</a></li>
+            <li><a href="#">58</a></li>
+            <li><a href="#">59</a></li>
+            <li><a href="#">60</a></li>
+          </ul>
+        </div>
+
+        <div style="padding-right:5%;padding-left:5%">
+          <div class="panel panel-default">
+
+            <div class="panel-body" style="padding-right:7%;padding-left:7%">
+              <!-- This part of the data changes based on page -->
+
+              <p class="lead">Show question here.Who is considered father of computer science? and some more added words just to make this question span into multiline so that we can see how good would it look in multiline?</p>
+
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="radio" name="answer" aria-label="...">
+                </span>
+                <input type="text" class="form-control" value="Nowman Tabrez" readonly>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="radio" name="answer" aria-label="...">
+                </span>
+                <input type="text" class="form-control" value="Nawaz Sharif" readonly>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="radio" name="answer" aria-label="...">
+                </span>
+                <input type="text" class="form-control" value="Rohan Antony" readonly>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="radio" name="answer" aria-label="...">
+                </span>
+                <input type="text" class="form-control" value="Charles Babbage" readonly>
+              </div>
+
+              <ul class="pager">
+                <li class="disabled"><a href="#">&laquo; Prev</a></li>
+                <li><a href="#">Next &raquo;</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-default" style="margin-left:10%;margin-bottom:4%">Submit</a>
 
       </div>
     </div>
-  </nav>
-
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="text-center">Viva Subject</h1>
-      <p class="text-center">{Information abt the test such as syllabus coverage}</p>
-    </div>
-  </div>
-
-  <div class="panel panel-primary" style="padding-right:7%;padding-left:7%">
-        <div class="panel-heading" style="font-size:200%;" >Who is the father of computer science</div>
-        <div class="panel-body">
-          <div class="well">
-          <p>The <mark><i>Answer</i></mark> is -</p>
-          <form role="form"  style="font-size:125%;">
-              <div class="radio">
-                <label><input type="radio" name="optradio">Nowman</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="optradio">Anto</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="optradio" >Nawaz</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="optradio" >Charles Babbage</label>
-              </div>
-            </form>
-          </div>
-        </div>
   </div>
 
 
