@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <script src="../js/jquery.js"></script>
+  <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -36,35 +37,35 @@
         <div class="panel-body" style="padding-left:10%;padding-right:10%;margin-left:5%;margin-right:5%">
 
           <!-- Show errors here-->
-          <div class="alert alert-danger">
+          <div class="alert alert-danger" id="signUpAlert">
             Change a few stuff and try submitting again.
           </div>
 
           <!-- enter user id -->
-          <div class="form-group">
-            <label for="userId" class="control-label">Email/LoginId</label>
-            <input type="text" class="form-control" placeholder="Enter Id *used for login">
+          <div class="form-group" id="signUpId">
+            <label for="userId" class="control-label">User Id</label>
+            <input type="text" class="form-control" id="signUpIdValue" placeholder="Enter Id *used for login">
           </div>
           <!-- enter password -->
-          <div class="form-group">
-            <label for="userPassword1" class="control-label">Password</label>
-            <input type="password" class="form-control" placeholder="Enter Password *used for login">
+          <div class="form-group" id="signUpPass1">
+            <label for="userPassword1" class="control-label">User Password</label>
+            <input type="password" class="form-control" id="signUpPass1Value" placeholder="Enter Password *used for login">
           </div>
           <!-- retype enter password -->
-          <div class="form-group">
+          <div class="form-group" id="signUpPass2">
             <label for="userPassword2" class="control-label">Retype Password</label>
-            <input type="password" class="form-control" placeholder="Enter Password again *used for login">
+            <input type="password" class="form-control" id="signUpPass2Value" placeholder="Enter Password again *used for login">
           </div>
           <!-- Check if student on teacher -->
           <div class="form-group">
             <label class="control-label">User type:</label>
             <div>
                 <label>
-                  <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+                  <input name="signUpType" value="student" checked="" type="radio">
                   Student
                 </label>
                 <label>
-                  <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                  <input name="signUpType" value="subject" type="radio">
                   Subject Teacher
                 </label>
             </div>
@@ -76,16 +77,13 @@
           <div class="form-group" style="height:0px;width:0px;">
             <input type="password" class="form-control" style="height:0px;width:0px;display:none;" placeholder="Enter Password again *used for login">
           </div>
-          <!-- Captcha added here -->
 
           <!-- The button and set of links -->
           <div>
             <center>
               <div>
-                <a href="subject/subjectProfile.html" class="btn btn-default" style="margin-top:2%;margin-bottom:2%">Sign Up</a>
+                <a href="#" onclick="signUp()" class="btn btn-default" style="margin-top:2%;margin-bottom:2%">Sign Up</a>
               <div>
-              <div style="margin-top:4%">
-              </div>
             </center>
           </div>
         </div>
@@ -104,26 +102,26 @@
         <div class="panel-body" style="padding-left:10%;padding-right:10%;margin-left:5%;margin-right:5%">
 
           <!-- Show errors here-->
-          <div class="alert alert-danger">
+          <div class="alert alert-danger" id="loginAlert">
             Change a few things up and try submitting again.
           </div>
 
 
           <!-- enter user id -->
-          <div class="form-group">
+          <div class="form-group" id="loginId">
             <label for="userId" class="control-label">User Id</label>
-            <input type="text" class="form-control" placeholder="Enter Id">
+            <input type="text" class="form-control" id="loginIdValue" placeholder="Enter Id">
           </div>
           <!-- enter password -->
-          <div class="form-group">
+          <div class="form-group" id="loginPass">
             <label for="userPassword" class="control-label">User Password</label>
-            <input type="password" class="form-control" placeholder="Enter Password">
+            <input type="password" class="form-control" id="loginPassValue" placeholder="Enter Password">
           </div>
           <!-- The button and set of links -->
           <div>
             <center>
               <div>
-                <a href="subject/subjectProfile.html" class="btn btn-default" style="margin-top:2%;margin-bottom:7%">Sign In</a>
+                <a href="#" onclick="login()" class="btn btn-default" style="margin-top:2%;margin-bottom:7%">Sign In</a>
               <div>
               <!-- Temporary buttom -->
               <!-- <a href="student/studentProfile.html">Sign in as student (temporary button)</a><br/> -->
