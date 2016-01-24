@@ -18,32 +18,80 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="#">OnlineViva</a>
       </div>
-      <div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
     </div>
   </nav>
   <!-- end of navigation bar  -->
 
-<div class="container" style="margin-top:7%">
+<div class="container" style="margin-top:2%">
   <div class="row">
-    <!-- Start of banner -->
+
+    <!-- start of signup -->
     <div class="col-sm-6">
       <div class="panel panel-default">
         <div class="panel-header">
           <center>
-            <h3>Banner</h3>
+            <h3>Sign up</h3>
           </center>
         </div>
         <div class="panel-body" style="padding-left:10%;padding-right:10%;margin-left:5%;margin-right:5%">
-         <p>Here lies the update sent to the user</p>
+
+          <!-- Show errors here-->
+          <div class="alert alert-danger">
+            Change a few stuff and try submitting again.
+          </div>
+
+          <!-- enter user id -->
+          <div class="form-group">
+            <label for="userId" class="control-label">Email/LoginId</label>
+            <input type="text" class="form-control" placeholder="Enter Id *used for login">
+          </div>
+          <!-- enter password -->
+          <div class="form-group">
+            <label for="userPassword1" class="control-label">Password</label>
+            <input type="password" class="form-control" placeholder="Enter Password *used for login">
+          </div>
+          <!-- retype enter password -->
+          <div class="form-group">
+            <label for="userPassword2" class="control-label">Retype Password</label>
+            <input type="password" class="form-control" placeholder="Enter Password again *used for login">
+          </div>
+          <!-- Check if student on teacher -->
+          <div class="form-group">
+            <label class="control-label">User type:</label>
+            <div>
+                <label>
+                  <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+                  Student
+                </label>
+                <label>
+                  <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                  Subject Teacher
+                </label>
+            </div>
+          </div>
+
+
+          <!-- This field is intentionally not shown to the user and is used to track bots-->
+          <!-- This field will only be filled by the bots and not by users as it is inaccessible -->
+          <div class="form-group" style="height:0px;width:0px;">
+            <input type="password" class="form-control" style="height:0px;width:0px;display:none;" placeholder="Enter Password again *used for login">
+          </div>
+          <!-- Captcha added here -->
+
+          <!-- The button and set of links -->
+          <div>
+            <center>
+              <div>
+                <a href="subject/subjectProfile.html" class="btn btn-default" style="margin-top:2%;margin-bottom:2%">Sign Up</a>
+              <div>
+              <div style="margin-top:4%">
+              </div>
+            </center>
+          </div>
         </div>
       </div>
     </div>
-    <!-- End of banner -->
+    <!-- end of signup -->
 
     <!-- start of login -->
     <div class="col-sm-6">
@@ -54,6 +102,13 @@
           </center>
         </div>
         <div class="panel-body" style="padding-left:10%;padding-right:10%;margin-left:5%;margin-right:5%">
+
+          <!-- Show errors here-->
+          <div class="alert alert-danger">
+            Change a few things up and try submitting again.
+          </div>
+
+
           <!-- enter user id -->
           <div class="form-group">
             <label for="userId" class="control-label">User Id</label>
@@ -68,14 +123,10 @@
           <div>
             <center>
               <div>
-                <a href="subject/subjectProfile.html" class="btn btn-default" style="margin-top:2%;margin-bottom:2%">Sign In</a>
+                <a href="subject/subjectProfile.html" class="btn btn-default" style="margin-top:2%;margin-bottom:7%">Sign In</a>
               <div>
               <!-- Temporary buttom -->
-              <a href="student/studentProfile.html">Sign in as student (temporary button)</a><br/>
-              <a href="forgotPassword.html">forgot password?</a>
-              <div style="margin-top:5%">
-                <a href="signUp.html">Sign up to create a new account</a></br>
-              </div>
+              <!-- <a href="student/studentProfile.html">Sign in as student (temporary button)</a><br/> -->
             </center>
           </div>
         </div>
