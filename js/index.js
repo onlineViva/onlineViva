@@ -1,14 +1,15 @@
 $(document).ready(function(){
   $("#loginAlert").hide();
   $("#signUpAlert").hide();
-  inputError("#loginAlert","Credentials not correct",["#loginId","#loginPass"]);
-  inputError("#signUpAlert","User Id taken",["#signUpId"]);
-  inputError("#signUpAlert","Password not same",["#signUpPass1","#signUpPass2"]);
+  inputError("#loginPanel","#loginAlert","Credentials not correct",["#loginId","#loginPass"]);
+  inputError("#signUpPanel","#signUpAlert","Password not same",["#signUpPass1","#signUpPass2"]);
+
 });
 
 //we need to write down the possible errors
 
-function inputError(alertId,message,id){
+function inputError(panelId,alertId,message,id){
+  $(panelId).addClass('panel-danger');
   id.forEach(function(obj){
     $(obj).addClass('has-error');
   });
@@ -18,6 +19,7 @@ function inputError(alertId,message,id){
 }
 
 function removeInputError(id){
+  $(panelId).removeClass('panel-danger');
   id.forEach(function(obj){
     $(obj).removeClass('has-error');
   });
@@ -41,4 +43,8 @@ function signUp(){
 
 function login(){
   //this function is called onclick of signin button
+}
+
+function checkInputEmptyError(inputs){
+  //function to check if any input field is left empty.
 }
